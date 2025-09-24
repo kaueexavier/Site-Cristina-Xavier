@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/img/logo.png" type="image/png">
+    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
     <title>Cristina Xavier - Cuide de você para viver melhor amanhã</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,8 @@
     <!--HEADER-->
 
     <div class="bg-home">
-      <header  data-aos="fade-up" data-aos-duration="2000">
+      <header data-aos="fade-up" data-aos-duration="2000">
+        
         <nav class="header-content container">
           <div>
             <div class="header-icons" href="#">
@@ -47,9 +48,8 @@
           </div>
 
           <div>
-            <a class="header-button" href="#"> Sobre </a>
-            <a class="header-button" href="#"> Aulas </a>
-            <a class="header-button" href="#"> Depoimentos </a>
+            <a class="header-button" href="#sobre"> Sobre </a>
+            <a class="header-button" href="#aulas"> Aulas </a>
           </div>
         </nav>
 
@@ -57,9 +57,11 @@
           <h1>Cuide de você hoje para viver melhor amanhã.</h1>
           <p></p>
           <a
-            href="https://api.whatsapp.com/send?phone=551836253144&text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho."
+            href="https://api.whatsapp.com/send?phone=551836253144&text=Oi%20Cris,%20quero%20saber%20mais%20sobre%20o%20seu%20trabalho."
             class="button-agendar"
             target="_blank"
+            data-aos="zoom-in-up"
+            data-aos-delay="400"
           >
             Faça uma aula experimental
           </a>
@@ -69,7 +71,7 @@
 
     <!--SOBRE-->
 
-    <section class="sobre">
+    <section id="sobre" class="sobre">
       <div class="container sobre-content">
         <div
           data-aos="fade-right"
@@ -80,7 +82,11 @@
           <img src="/assets/img/sobre.png" alt="Imagens sobre o site" />
         </div>
 
-        <div class="sobre-descricao" data-aos="fade-down" data-aos-duration="2000">
+        <div
+          class="sobre-descricao"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <h2>SOBRE</h2>
           <p>
             Sou a <strong style="color: aqua">Cristina Xavier</strong>,
@@ -105,13 +111,18 @@
 
     <!--AULAS-->
 
-    <section class="aulas">
+    <section id="aulas" class="aulas">
       <div class="aulas-content" data-aos="fade-up" data-aos-duration="1000">
         <h2>AULAS QUE VOCÊ VAI AMAR CONHECER</h2>
       </div>
 
       <section class="treinos">
-        <div class="treino" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div
+          class="treino"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           <img src="/assets/img/pump.png" alt="Logo Pump" />
 
           <div class="descricao">
@@ -121,10 +132,14 @@
               Definição
             </strong>
           </div>
-          <button class="botao-info">Saiba mais</button>
         </div>
 
-        <div class="treino" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div
+          class="treino"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           <img src="/assets/img/balance.png" alt="Logo Pump" />
 
           <div class="descricao">
@@ -134,10 +149,14 @@
               Bem-estar</strong
             >
           </div>
-          <button class="botao-info">Saiba mais</button>
         </div>
 
-        <div class="treino" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <div
+          class="treino"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <img src="/assets/img/tone.png" alt="Logo Pump" />
 
           <div class="descricao">
@@ -147,7 +166,6 @@
               Abdômen</strong
             >
           </div>
-          <button class="botao-info">Saiba mais</button>
         </div>
       </section>
     </section>
@@ -169,6 +187,19 @@
 
       <p>Copyright 2025 | Cristina Xavier - Todos os direitos reservados.</p>
     </footer>
+
+    <!--Botao Flutuante-->
+
+    <a
+      href="https://api.whatsapp.com/send?phone=551836253144&text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho."
+      class="btn-flutuante"
+      target="_blank"
+      data-aos="zoom-in-out"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+    >
+      <button>Quero fazer aula!</button>
+    </a>
 
     <script src="script.js"></script>
   </body>
